@@ -15,13 +15,13 @@ int main()
 
 	// 動的確保
 	array = new int[size];
-
-	InitRandArray(array, size);
-	BubbleSort(array, size);
-
-	// 解放
+	
 	if (array != NULL)
 	{
+		InitRandArray(array, size);
+		BubbleSort(array, size);
+
+		// 解放
 		delete[] array;
 		array = NULL;
 	}
